@@ -2,5 +2,4 @@
 const quiz {
   q: 1,
 
-
 }
