@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
   <script src="https://code.jquery.com/jquery.js"></script>
 
@@ -17,6 +17,7 @@
 <body>
 
   <div class="container">
+
     <div class="row">
       <div class="col-12-md">
         <header>
@@ -28,7 +29,8 @@
       <div class="col-2-md">
       </div>
       <div class="col-8-md">
-        <h3>Time Remaining: <span id="time-left">30</span> Seconds!</h3>
+        <button id="start" type="submit" name="start">Click to Start</button>
+        <h3 class="hidden">Time Remaining: <span id="time-left"></span> Seconds!</h3>
       </div>
       <div class="col-2-md">
       </div>
@@ -37,7 +39,7 @@
       <div class="col-1-md">
       </div>
       <div class="col-10-md">
-        <h2 id="question">Question</h2>
+        <h2 id="question" class="hidden"></h2>
       </div>
       <div class="col-1-md">
       </div>
@@ -46,7 +48,8 @@
       <div class="col-3-md">
       </div>
       <div class="col-6-md" class="answer">
-        <h2 id="answer-one">a1</h2>
+        <button id="again" type="submit" name="again">Click to Try Again</button>
+        <button id="answer-one" class="hidden answer" type="button" name="a1"></button>
       </div>
       <div class="col-3-md">
       </div>
@@ -55,7 +58,7 @@
       <div class="col-3-md">
       </div>
       <div class="col-6-md" class="answer">
-        <h2 id="answer-two">a2</h2>
+        <button id="answer-two" class="hidden answer" type="button" name="a2"></button>
       </div>
       <div class="col-3-md">
       </div>
@@ -64,7 +67,7 @@
       <div class="col-3-md">
       </div>
       <div class="col-6-md" class="answer">
-        <h2 id="answer-three">a3</h2>
+        <button id="answer-three" class="hidden answer" type="button" name="a3"></button>
       </div>
       <div class="col-3-md">
       </div>
@@ -73,14 +76,15 @@
       <div class="col-3-md">
       </div>
       <div class="col-6-md" class="answer">
-        <h2 id="answer-four">a4</h2>
+        <button id="answer-four" class="hidden answer" type="button" name="a4"></button>
       </div>
       <div class="col-3-md">
       </div>
     </div>
-
 
   </div>
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 
 </body>
