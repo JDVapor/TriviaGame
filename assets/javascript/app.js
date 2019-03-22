@@ -96,7 +96,7 @@ const checkAnswer = pick => {
     $("#question").text("You got it!");
     score++;
   } else {
-    $("#question").html("Bummmer!<br>The correct answer was: " + questions[q].correct);
+    $("#question").html("Bummmer!<br><br>The correct answer was: " + questions[q].correct);
   }
 }
 
